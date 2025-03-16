@@ -33,7 +33,7 @@ def myFuzzy(windSpeed, snowPrecip):
     risk = ctrl.Consequent(np.arange(0, 101, 1), "risk")
 
     # Get historical climate data
-    from climate_data_analysis import ClimateData
+    from src.climate_data_analysis import ClimateData
     cd = ClimateData()
 
     # Define fuzzy membership functions for snow

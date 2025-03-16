@@ -1,11 +1,6 @@
-import sys
-import os
-
-# Add the "src" directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
-
 import unittest
-from fuzzy_logic import myFuzzy
+from src.fuzzy_logic import myFuzzy
+
 
 class TestFuzzyLogic(unittest.TestCase):
     """Unit tests for the fuzzy logic risk assessment system."""
@@ -42,6 +37,29 @@ class TestFuzzyLogic(unittest.TestCase):
         """Test case: Negative values should return -1."""
         risk = myFuzzy(-1, -1)
         self.assertEqual(risk, -1)
+
+    def test_boundary_conditions(self):
+        """Test boundary conditions"""
+        # zero value test
+        self.assertGreaterEqual(myFuzzy(
+            0, 0), 0, "Zero value input should return a valid risk value")
+
+        # minimum value test
+        self.assertGreaterEqual(myFuzzy(
+            0.1, 0.1), 0, "Minimum value input should return a valid risk value")
+
+        # maximum value test
+        self.assertGreaterEqual(myFuzzy(
+            100, 20), 0, "Maximum value input should return a valid risk value")
+
+        # negative value test
+        self.assertEqual(myFuzzy(-1, 0), -1,
+                         "Negative value input should return -1")
+        self.assertEqual(myFuzzy(0, -1), -1,
+                         "Negative value input should return -1")
+
+        print("Boundary conditions test passed!")
+
 
 if __name__ == "__main__":
     unittest.main()

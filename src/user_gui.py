@@ -1,11 +1,12 @@
 import customtkinter as ctk
-from request_weather_info import Weather  # Import the weather module
-from fuzzy_logic import myFuzzy  # Import the fuzzy logic function
+from src.request_weather_info import Weather  # Import the weather module
+from src.fuzzy_logic import myFuzzy  # Import the fuzzy logic function
 
 # Initialize weather instance to get current weather info
 weather = Weather()
 
 class RiskAssessmentApp(ctk.CTk):
+    """GUI for driving risk assessment"""
     def __init__(self):
         super().__init__()
 
