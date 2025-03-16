@@ -47,3 +47,15 @@ Run all tests:
 ```bash
 pytest
 ```
+
+Check test coverage:
+
+```bash
+pytest --cov=src
+```
+
+Generate HTML coverage report:
+
+```bash
+pytest --cov=src --cov-report=html
+```
