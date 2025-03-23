@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/Assignment_3.egg-info/PKG-INFO
+src/Assignment_3.egg-info/SOURCES.txt
+src/Assignment_3.egg-info/dependency_links.txt
+src/Assignment_3.egg-info/top_level.txt
+test/test_climate_data_analysis.py
+test/test_puzzy_logic.py
+test/test_request_weather_info.py
+test/test_user_gui.py

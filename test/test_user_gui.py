@@ -1,3 +1,8 @@
+"""
+Module Purpose: Tests the GUI interface
+Author: Xicheng Yin, 249508610, xyin@algomau.ca; Parth Sathiya, 259662610, psathiya@algomau.ca
+Date: 2025-03-15
+"""
 import unittest
 from src.user_gui import RiskAssessmentApp
 

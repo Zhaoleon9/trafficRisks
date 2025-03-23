@@ -1,6 +1,6 @@
 import customtkinter as ctk
-from src.request_weather_info import Weather  # Import the weather module
-from src.fuzzy_logic import myFuzzy  # Import the fuzzy logic function
+from request_weather_info import Weather  # Import the weather module
+from fuzzy_logic import myFuzzy  # Import the fuzzy logic function
 
 # Initialize weather instance to get current weather info
 weather = Weather()

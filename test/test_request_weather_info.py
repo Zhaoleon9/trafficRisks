@@ -1,3 +1,8 @@
+"""
+Module Purpose: Tests the request weather info class
+Author: Lin Zhao, 249416700, lizhao@algomau.ca
+Date: 2025-03-15
+"""
 import unittest
 from src.request_weather_info import Weather
 

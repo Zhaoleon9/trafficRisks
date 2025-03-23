@@ -1,3 +1,8 @@
+"""
+Module Purpose: Tests for ClimateData class 
+Author: Lin Zhao, 249416700, lizhao@algomau.ca; Parth Sathiya, 259662610, psathiya@algomau.ca
+Date: 2025-03-15
+"""
 import unittest
 import pandas as pd
 from src.climate_data_analysis import ClimateData

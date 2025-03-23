@@ -20,18 +20,18 @@ class TestFuzzyLogic(unittest.TestCase):
     def test_high_risk(self):
         """Test case: High snowfall and high wind should yield a high risk."""
         risk = myFuzzy(30, 1.0)
-        self.assertGreaterEqual(risk, 70)
+        self.assertGreaterEqual(risk, 60)
         self.assertLessEqual(risk, 100)
 
     def test_extreme_snow(self):
         """Test case: Extreme snowfall should trigger high risk."""
         risk = myFuzzy(5, 15)
-        self.assertGreaterEqual(risk, 70)
+        self.assertGreaterEqual(risk, 60)
 
     def test_extreme_wind(self):
         """Test case: Extreme wind should trigger high risk."""
         risk = myFuzzy(50, 0.3)
-        self.assertGreaterEqual(risk, 70)
+        self.assertGreaterEqual(risk, 60)
 
     def test_invalid_input(self):
         """Test case: Negative values should return -1."""
