@@ -11,6 +11,7 @@ This application uses fuzzy logic to analyze current weather conditions and hist
 Install required packages:
   ```
   pip install customtkinter numpy pandas scikit-fuzzy requests pytest pytest-cov
+  pip install -e .
   ```
 
 
