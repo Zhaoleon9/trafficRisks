@@ -1,7 +1,15 @@
+"""
+Module Purpose: Gets the current weather information from openweathermap 
+Author: Celeste Qin, 249523520, hqin@algomau.ca
+Date: 2025-03-15
+"""
 import requests
+import os
 
 class Weather:
-    API_KEY = "983a2ee7861b6ff5340840f66b2c033a"  # openweather key
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    API_KEY_FILE = os.path.join(script_dir, '../historical data/key.txt')
     CITY = "Sault Ste. Marie"
     def __init__(self, city ="", api_key =""):
         
@@ -10,7 +18,12 @@ class Weather:
         else:
             self.city = city
         if api_key=="":
-            self.api_key = Weather.API_KEY
+            try:
+                with open(Weather.API_KEY_FILE, 'r', encoding='utf-8') as file:
+                    self.api_key = file.read().strip()
+            except FileNotFoundError:
+                self.api_key = ""
+                print("API key file not found.")
         else:
             self.api_key = api_key
         

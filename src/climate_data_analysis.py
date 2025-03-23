@@ -1,3 +1,9 @@
+"""
+Module Purpose: Fetch historical climate data and offer functions for getting 
+wind speed and snow precipitation 
+Author: Lin Zhao, 249416700, lizhao@algomau.ca
+Date: 2025-03-15
+"""
 import pandas as pd
 import numpy as py  # Typo: should be `np` instead of `py`
 import os

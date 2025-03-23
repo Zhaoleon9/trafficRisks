@@ -1,3 +1,8 @@
+"""
+Module Purpose: GUI for driving risk assessment 
+Author: Xicheng Yin, 249508610, xyin@algomau.ca
+Date: 2025-03-15
+"""
 import customtkinter as ctk
 from request_weather_info import Weather  # Import the weather module
 from fuzzy_logic import myFuzzy  # Import the fuzzy logic function

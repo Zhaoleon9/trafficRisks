@@ -1,7 +1,6 @@
 """
 Module Purpose: Computes the driving risk based on snow precipitation and wind speed 
-wind speed and snow precipitation 
-Author: Lin Zhao, 249416700, lizhao@algomau.ca
+Author: Boyuan Zhang, 249454830, bzhang@algomau.ca
 Date: 2025-03-22
 """
 import numpy as np
