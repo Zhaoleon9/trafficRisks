@@ -1,6 +1,6 @@
 """
 Module Purpose: Tests the request weather info class
-Author: Celeste Qin, 249523520, hqin@algomau.ca; Parth Patel, 249525400, parthpatel@algomau.ca
+Author: Celeste Qin, 249523520, hqin@algomau.ca; Parth Sathiya, 259662610, psathiya@algomau.ca
 Date: 2025-03-15
 """
 import unittest
