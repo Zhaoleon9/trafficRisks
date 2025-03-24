@@ -15,7 +15,7 @@ class TestClimateData(unittest.TestCase):
         cls.calc = ClimateData()
 
     def test_get_wind_speed(self):
-        self.assertIsInstance(self.calc.get_wind_speed(), pd.Series)
+        self.assertIsInstance(self.calc.get_wind_speed(), pd.Series) 
 
     def test_get_snow_precip(self):
         self.assertIsInstance(self.calc.get_snow_precip(), pd.Series)

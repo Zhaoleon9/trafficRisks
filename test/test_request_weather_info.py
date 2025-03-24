@@ -16,7 +16,7 @@ class TestRequestWeatherInfo(unittest.TestCase):
     def test_get_wind_speed(self):
         self.assertIsNotNone(self.calc.get_wind_speed())
 
-    def test_get_snow_precipitation(self):
+    def test_get_snow_precipitation(self): 
         self.assertIsNotNone(self.calc.get_snow_precipitation())
 
 

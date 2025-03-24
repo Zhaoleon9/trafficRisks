@@ -15,7 +15,7 @@ class TestUI(unittest.TestCase):
         app = RiskAssessmentApp()
 
         # verify the default values are not empty
-        self.assertNotEqual(app.entry_snow.get(), "")
+        self.assertNotEqual(app.entry_snow.get(), "") 
         self.assertNotEqual(app.entry_wind.get(), "")
 
         # verify the title is displayed

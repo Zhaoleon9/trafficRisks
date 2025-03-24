@@ -1,6 +1,6 @@
 """
 Module Purpose: Tests for the fuzzy logic risk assessment system 
-Author: Boyuan Zhang, 249454830, bzhang@algomau.ca; Parth Patel, 249452120, ppatel@algomau.ca
+Author: Boyuan Zhang, 249454830, bzhang@algomau.ca; Parth Sathiya, 259662610, psathiya@algomau.ca
 Date: 2025-03-22
 """
 import unittest
@@ -18,7 +18,7 @@ class TestFuzzyLogic(unittest.TestCase):
 
     def test_moderate_risk(self):
         """Test case: Moderate snowfall and moderate wind should yield a moderate risk."""
-        risk = myFuzzy(10, 0.5)
+        risk = myFuzzy(10, 0.5) 
         self.assertGreaterEqual(risk, 30)
         self.assertLessEqual(risk, 70)
 
